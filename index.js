@@ -55,8 +55,9 @@ console.log(firstName + ' ' + lastName);
 // TODO: ADD CODE HERE
 let price = 9.98;
 let quantity = 71;
-let total = price * quantity;
-console.log(Math.floor(total * 100) / 100);
+let priceAndQuantityMult = price * quantity;
+let total = priceAndQuantityMult.toFixed(2);
+console.log(`$${total}`);
 
 /* Challenge #4
  * Declare a variable and conditionally assign it a value
@@ -76,7 +77,7 @@ console.log(Math.floor(total * 100) / 100);
 let weather = 'Rainy';
 let message;
 
-if (weather === 'Sunny') {
+if (weather == 'Sunny') {
     message = 'Yay! It\'s sunny outside';
 } else {
     message = 'Aww! It\'s not sunny outside';
@@ -114,11 +115,11 @@ console.log(myFunction());
  */
 
 // TODO: ADD CODE HERE
-const myFunction = () => {
+const myArrowFunction = () => {
     let randomString = 'This is a random string. But where\'s the yarn?';
     return randomString;
 }
-console.log(myFunction());
+console.log(myArrowFunction());
 
 /* Challenge #7
  * Create a function that accepts a string argument and returns it in all uppercase
